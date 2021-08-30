@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+$primary-color: #41a7d9;
+$secondary-color: #292623;
+header {
+    .collapse {
+        ul {
+            li {
+                a {
+                    //styleName: Menu;
+                    color: $secondary-color !important;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                a:hover{
+                    color: $primary-color !important;
+                }
+            }
+        }
+    }
+    .navbar {
+        margin-top: 64px;
+    }
+    .login {
+        display: flex;
+        align-items: center;
+        .ola {
+            padding-right: 10px;
+        }
+        .vector {
+            padding-right: 10px;
+        }
+        .ft-user {
+            border-radius: 100px;
+            width: 47px;
+            height: 47px;
+        }
+    }
+}
+.titulo {
+    h1 {
+        //styleName: H1;
+        color: $primary-color;
+        font-family: Roboto;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+.icones {
+    width: 993px;
+    margin: 0 auto;
+    margin-top: 42px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    a {
+        text-decoration: none;
+    }
+    .itens {
+        width: 166px;
+        height: 166px;
+        text-align: center;
+        img {
+            margin-top: 43px;
+            width: 50px;
+            height: 50px;
+        }
+        .card-body {
+            p {
+                //styleName: Menu;
+                color: $secondary-color;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }
+
+    }
+    .itens:hover{
+        border: #41a7d9 2px solid !important;
+    }
+}
