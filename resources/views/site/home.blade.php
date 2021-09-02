@@ -36,19 +36,38 @@
     <div class="anuncios">
         <div class="destaque">
             <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <div class="descricao">
+                <div class="nome">
+                    <p>AUDI RS6 (2016)</p>
+                </div>
+                <div class="pais">
+                    <p>bandeira</p>
+                </div>
+                <div class="lotes">
+                    <p>3 lotes</p>
+                </div>
+                <div class="salvar">
+                    <p>disket</p>
+                </div>
+                <div class="compartilhar">
+                    <p>share</p>
+                </div>
+                <div class="favorito">
+                    <p>heart</p>
+                </div>
+            </div>
         </div>
-        <div class="anuncio">
+        <div class="destaque-1">
             <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
         </div>
-        <div class="anuncio1">
+        <div class="destaque-2">
             <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
         </div>
-        <div class="anuncio2">
+        <div class="destaque-3">
             <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
         </div>
-        <div class="anuncio3">
+        <div class="destaque-4">
             <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
         </div>
-
     </div>
 @endsection
