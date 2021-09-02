@@ -5,6 +5,9 @@
 }
 $primary-color: #41a7d9;
 $secondary-color: #292623;
+
+
+
 header {
     .collapse {
         ul {
@@ -20,7 +23,7 @@ header {
                     letter-spacing: 0em;
                     text-align: left;
                 }
-                a:hover{
+                a:hover {
                     color: $primary-color !important;
                 }
             }
@@ -46,6 +49,7 @@ header {
     }
 }
 .titulo {
+    margin-top: 40px;
     h1 {
         //styleName: H1;
         color: $primary-color;
@@ -55,13 +59,11 @@ header {
         font-weight: 900;
         line-height: 41px;
         letter-spacing: 0em;
-        text-align: left;
     }
 }
 .icones {
     width: 993px;
-    margin: 0 auto;
-    margin-top: 42px;
+    margin: 42px auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -90,9 +92,55 @@ header {
                 text-align: center;
             }
         }
-
     }
-    .itens:hover{
+    .itens:hover {
         border: #41a7d9 2px solid !important;
+    }
+}
+// PAGINA BANNERS
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .carregar {
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            display: block;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .amostra {
+        display: flex;
+        .acoes {
+            height: 236px;
+            width: 78px;
+            .lixeira {
+                button {
+                    margin-top: 60px;
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+            .olho {
+                button {
+                    margin-top: 10px;
+                    width: 47px;
+                    height: 47px;
+                }
+            }
+        }
+        .banner-img {
+            width: 507px;
+            height: 236px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

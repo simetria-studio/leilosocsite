@@ -12,7 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// backoffice 
+Route::get('painel', function () {
+    return view('backoffice.home');
+});
+Route::get('painel/banner', function () {
+    return view('backoffice.banner');
+});
 
+// site 
 Route::get('/', function () {
-    return view('layouts.main');
+    return view('site.home');
 });
