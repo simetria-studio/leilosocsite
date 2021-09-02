@@ -19,7 +19,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="/painel">
+                    <a class="navbar-brand" href="backoffice">
                         <img src="{{ url("assets/img/backoffice/logo-padrao.png") }} " alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

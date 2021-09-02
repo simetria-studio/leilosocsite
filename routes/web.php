@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // backoffice 
-Route::get('painel', function () {
+Route::get('backoffice', function () {
     return view('backoffice.home');
 });
-Route::get('painel/banner', function () {
+Route::get('backoffice/banner', function () {
     return view('backoffice.banner');
 });
 

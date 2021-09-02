@@ -7,7 +7,7 @@
     </div>
     <div class="icones">
         <div class="itens">
-            <a href="painel/banner">
+            <a href="backoffice/banner">
                 <img src="{{ url('assets/img/backoffice/banner.png') }} " alt="banner">
                 <div class="card-body">
                     <p class="card-text">Cadastrar <br> Banners</p>
