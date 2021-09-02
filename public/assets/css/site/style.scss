@@ -22,8 +22,8 @@ ul {
 header {
     nav {
         height: 96px;
-        border-top: #9F9F9F 0.75px solid;
-        border-bottom: #9F9F9F 0.75px solid;
+        border-top: #9f9f9f 0.75px solid;
+        border-bottom: #9f9f9f 0.75px solid;
         .navbar {
             padding: 20px 0;
         }
@@ -231,56 +231,31 @@ footer {
 }
 
 .anuncios {
+    height: auto;
     display: grid;
     grid-template-areas:
         "a a b c"
         "a a d e";
     grid-gap: 5px;
-    border: red 1px solid;
+    .fotografia{
+        
+
+        
+    }
     .destaque {
-        border: red 1px solid;
         grid-area: a;
-        height: 400px;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        .descricao {
-            border: red 1px solid;
-            display: grid;
-            grid-template-areas:
-             "name name name"
-             "pais lotes salvar compartilhar favoritos"
-            ;
-            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            .name {
-                border: red 1px solid;
-                grid-area: nome;
-            }
-            .pais {
-                border: red 1px solid;
-                grid-area: pais;
-            }
-            .lotes {
-                border: red 1px solid;
-                grid-area: lotes;
-            }
-            .salvar {
-                border: red 1px solid;
-                grid-area: salvar;
-            }
-            .compartilhar {
-                border: red 1px solid;
-                grid-area: compartilhar;
-            }
-            .favorito {
-                border: red 1px solid;
-                grid-area: favorito;
+        .fotografia{
+            width: 500px;
+            height: 375px;
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
+
+        
     }
     .destaque-1 {
-        border: red 1px solid;
         grid-area: b;
         img {
             width: 100%;
@@ -288,7 +263,6 @@ footer {
         }
     }
     .destaque-2 {
-        border: red 1px solid;
         grid-area: c;
         img {
             width: 100%;
@@ -297,7 +271,6 @@ footer {
     }
     .destaque-3 {
         grid-area: d;
-        border: red 1px solid;
         img {
             width: 100%;
             height: 100%;
@@ -305,10 +278,61 @@ footer {
     }
     .destaque-4 {
         grid-area: e;
-        border: red 1px solid;
         img {
             width: 100%;
             height: 100%;
         }
     }
+    .descricao {
+        border-right: #9f9f9f 2px solid;
+        border-left: #9f9f9f 2px solid;
+        height: 80px;
+        margin-top: 10px;
+        padding-top: 10px;
+        .name {
+            .nome {
+                margin-left: 5%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+        .info {
+            display: flex;
+            .pais {
+                margin-left: 5%;
+                display: flex;
+                align-items: center;
+                width: 70%;
+                span {
+                    padding-left: 10px;
+                }
+            }
+            .salvar {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .compartilhar {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .favorito {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.sss {
+    width: 100%;
+    height: 500px;
 }

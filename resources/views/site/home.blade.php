@@ -2,7 +2,7 @@
 @section('content')
     <div class="slider">
         <div class="imagebg">
-            <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
         </div>
         <div class="imagebg">
             <img src="assets/img/site/teste1.jpg" alt="">
@@ -33,41 +33,149 @@
             </span>
         </div>
     </div>
-    <div class="anuncios">
+    <div class="anuncios mt-5">
         <div class="destaque">
-            <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <div class="fotografia">
+                <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
+            </div>
             <div class="descricao">
-                <div class="nome">
-                    <p>AUDI RS6 (2016)</p>
+                <div class="name">
+                    <div class="nome">
+                        <span>AUDI RS6 (2016)</span>
+                    </div>
                 </div>
-                <div class="pais">
-                    <p>bandeira</p>
+                <div class="info">
+                    <div class="pais">
+                        <span><i>asd</i></span>
+                        <span>3 lotes</span>
+                    </div>
+                    <div class="salvar">
+                        <span>disket</span>
+                    </div>
+                    <div class="compartilhar">
+                        <span>share</span>
+                    </div>
+                    <div class="favorito">
+                        <span>heart</span>
+                    </div>
                 </div>
-                <div class="lotes">
-                    <p>3 lotes</p>
-                </div>
-                <div class="salvar">
-                    <p>disket</p>
-                </div>
-                <div class="compartilhar">
-                    <p>share</p>
-                </div>
-                <div class="favorito">
-                    <p>heart</p>
-                </div>
+
             </div>
         </div>
         <div class="destaque-1">
-            <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <div class="fotografia">
+                <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
+            </div>
+            <div class="descricao">
+                <div class="name">
+                    <div class="nome">
+                        <span>LOJA (PORTO)</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="pais">
+                        <span><i>asd</i></span>
+                        <span>3 lotes</span>
+                    </div>
+                    <div class="salvar">
+                        <span>disket</span>
+                    </div>
+                    <div class="compartilhar">
+                        <span>share</span>
+                    </div>
+                    <div class="favorito">
+                        <span>heart</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="destaque-2">
-            <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <div class="fotografia">
+                <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
+            </div>
+            <div class="descricao">
+                <div class="name">
+                    <div class="nome">
+                        <span>GONDOLA CUELLO</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="pais">
+                        <span><i>asd</i></span>
+                        <span>3 lotes</span>
+                    </div>
+                    <div class="salvar">
+                        <span>disket</span>
+                    </div>
+                    <div class="compartilhar">
+                        <span>share</span>
+                    </div>
+                    <div class="favorito">
+                        <span>heart</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="destaque-3">
-            <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <div class="fotografia">
+                <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
+            </div>
+            <div class="descricao">
+                <div class="name">
+                    <div class="nome">
+                        <span>TOYOTA HILUX (2008)</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="pais">
+                        <span><i>asd</i></span>
+                        <span>3 lotes</span>
+                    </div>
+                    <div class="salvar">
+                        <span>disket</span>
+                    </div>
+                    <div class="compartilhar">
+                        <span>share</span>
+                    </div>
+                    <div class="favorito">
+                        <span>heart</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="destaque-4">
-            <img src="{{ url("assets/img/backoffice/banner-teste.png") }}" alt="">
+            <div class="fotografia">
+                <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
+            </div>
+            <div class="descricao">
+                <div class="name">
+                    <div class="nome">
+                        <span>TERRENO</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="pais">
+                        <span><i>asd</i></span>
+                        <span>3 lotes</span>
+                    </div>
+                    <div class="salvar">
+                        <span>disket</span>
+                    </div>
+                    <div class="compartilhar">
+                        <span>share</span>
+                    </div>
+                    <div class="favorito">
+                        <span>heart</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
+    <div class="sss">
+
     </div>
 @endsection
