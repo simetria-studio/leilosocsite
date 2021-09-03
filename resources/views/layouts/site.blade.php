@@ -39,7 +39,7 @@
 
                         <li>
                             <div class="search-wrapper">
-                                <input type="search" id="search" placeholder="Pesquisa">
+                                <input type="search" id="search" placeholder=" Pesquisa">
                                 <img src="assets/img/site/search.png" alt="">
                             </div>
                         </li>
@@ -235,7 +235,7 @@
                     <a href="#">CONTATOS</a>
                 </li>
                 <li>
-                    <a  href=" #">LEILÕES</a>
+                    <a href=" #">LEILÕES</a>
                 </li>
             </ul>
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -283,6 +283,28 @@
 
     <div class="container">
         @yield('content')
+    </div>
+    <div class="vcl">
+        <div class="bloco-1">
+            <p class="titulo">VENDA COM A LEILOSOC®</p>
+            <p>Receba uma avaliação dos seus bens em 4 etapas.</p>
+            <div class="estimativa mt-4">
+                <a class="btn btn-outline-light">OBTER ESTIMATIVA</a>
+            </div>
+            <p class="mt-4">Precisa de ajuda? Seleccione uma das opções.</p>
+            <div class="atalhos ">
+                <a class="btn" href="#">IMÓVEIS →</a>
+                <a class="btn" href="#">VEÍCULOS →</a>
+                <a class="btn" href="#">EQUIPAMENTOS →</a>
+                <a class="btn" href="#">ARTE →</a>
+            </div>
+        </div>
+        <div class="bloco-2">
+            <div class="p">
+                <img src="{{ url('assets/img/site/Ativo 10.png') }}" alt="">
+                <p>ENVIE INFORMAÇÃO SOBRE O BEM QUE QUER VENDER</p>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="links-footer">
@@ -367,7 +389,7 @@
                 </div>
                 <form action="">
                     <p>Subscreva já e receba o que a Leilosoc® tem de melhor para lhe oferecer no seu email.</p>
-                    <input name="news" type="email" placeholder="Preencha o seu email">
+                    <input name="news" type="email" placeholder=" Preencha o seu email">
                     <label for="news">
                         SUBSCREVA
                     </label>
@@ -391,6 +413,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/site/script.js"></script>
 </body>
 

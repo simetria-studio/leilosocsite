@@ -2,9 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
+    color: gray;
 }
 $primary-color: #41a7d9;
 $secondary-color: #292623;
+body {
+    background-color: white;
+}
 ul {
     li {
         a {
@@ -87,6 +91,7 @@ header {
                 }
             }
             li {
+                text-align: center;
                 h6 {
                     font-weight: 400;
                     font-size: 13px;
@@ -113,6 +118,47 @@ header {
         }
     }
 }
+.vcl {
+    display: flex;
+    background-color: #133759;
+    margin: 0 40px;
+    height: 300px;
+    p {
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .bloco-1 {
+        width: 50%;
+        margin: 40px 10px 30px 40px;
+        .titulo {
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+    .bloco-2 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .p {
+            p {
+                padding-top: 40px !important;
+                text-align: center;
+                color: #fff !important;
+                font-weight: 300 !important;
+                font-size: 10px !important;
+            }
+        }
+    }
+    .atalhos {
+        a {
+            background-color: #fff;
+            color: #133759 !important;
+            font-weight: 500;
+        }
+    }
+}
 footer {
     position: relative;
     bottom: 0;
@@ -130,7 +176,7 @@ footer {
                     a {
                         text-decoration: none;
                         color: #9d9d9c;
-                        font-weight: bold;
+                        font-weight: 500;
                     }
                     a:hover {
                         color: $primary-color !important;
@@ -228,6 +274,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    span {
+        color: #000000;
+    }
 }
 
 .anuncios {
@@ -236,27 +285,29 @@ footer {
     grid-template-areas:
         "a a b c"
         "a a d e";
-    grid-gap: 5px;
-    .fotografia{
-        
-
-        
+    grid-gap: 3px;
+    .fotografia {
     }
     .destaque {
         grid-area: a;
-        .fotografia{
+        .fotografia {
             width: 500px;
-            height: 375px;
+            height: 455px;
             img {
                 width: 100%;
                 height: 100%;
             }
         }
 
-        
     }
+            a {
+            ion-icon {
+                font-size: 20px;
+            }
+        }
     .destaque-1 {
         grid-area: b;
+        height: 180px;
         img {
             width: 100%;
             height: 100%;
@@ -264,6 +315,7 @@ footer {
     }
     .destaque-2 {
         grid-area: c;
+        height: 180px;
         img {
             width: 100%;
             height: 100%;
@@ -271,6 +323,7 @@ footer {
     }
     .destaque-3 {
         grid-area: d;
+        height: 180px;
         img {
             width: 100%;
             height: 100%;
@@ -278,6 +331,7 @@ footer {
     }
     .destaque-4 {
         grid-area: e;
+        height: 180px;
         img {
             width: 100%;
             height: 100%;
@@ -332,7 +386,44 @@ footer {
         }
     }
 }
-.sss {
-    width: 100%;
-    height: 500px;
+
+// categorias
+.encontre {
+    p {
+        font-size: 24px;
+    }
+    .enc {
+        color: #393534;
+        font-weight: 600;
+    }
+}
+.categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+    .imagem {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .nomecategoria {
+        border-left: #9f9f9f 1px solid;
+        border-right: #9f9f9f 1px solid;
+        margin-top: 3px;
+        width: 100%;
+        height: 16%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imoveis {
+        height: 300px;
+    }
+    .veiculos {
+    }
+    .equipamentos {
+    }
+    .arte {
+    }
 }
