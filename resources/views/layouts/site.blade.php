@@ -37,8 +37,8 @@
                         <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
 
-                        <li>
-                            <div class="search-wrapper">
+                        <li class="nav-item">
+                            <div class="pesquisa">
                                 <input type="search" id="search" placeholder=" Pesquisa">
                                 <img src="assets/img/site/search.png" alt="">
                             </div>
@@ -204,7 +204,7 @@
                             </ul>
                         </li>
                         {{-- OFFCANVAS --}}
-                        <li>
+                        <li class="nav-item">
                             <a href="#sidebar" class="d-block " data-bs-toggle="offcanvas" role="button"
                                 aria-controls="sidebar">
                                 <img src="assets/img/site/menu.png" alt="">
@@ -314,7 +314,7 @@
                         <h1>Leilosoc</h1>
                     </li>
                     <li>
-                        <a href="">Sobre a Leilosoc</a>
+                        <a href="/sobre">Sobre a Leilosoc</a>
                     </li>
                     <li>
                         <a href="">Desinvestimento</a>

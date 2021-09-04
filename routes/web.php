@@ -24,3 +24,6 @@ Route::get('backoffice/banner', function () {
 Route::get('/', function () {
     return view('site.home');
 });
+Route::get('/sobre', function () {
+    return view('site.sobre');
+});
