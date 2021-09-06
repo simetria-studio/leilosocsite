@@ -24,6 +24,7 @@ ul {
 }
 // Cabeçalho
 header {
+    background-color: white !important;
     nav {
         height: 96px;
         border-top: #9f9f9f 0.75px solid;
@@ -55,15 +56,12 @@ header {
                     box-sizing: border-box;
                     border-radius: 3px;
                     font-family: Roboto;
-                    font-size: 10px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 12px;
                     letter-spacing: 0em;
                     outline: none;
-                }
-                input:hover {
-                    border: $primary-color 2px solid;
                 }
                 img {
                     position: relative;
@@ -170,6 +168,7 @@ footer {
         grid-template-columns: 2fr 2fr 2fr 3fr;
 
         .link-util {
+            margin-top: 40px;
             ul {
                 li {
                     list-style: none;
@@ -253,6 +252,7 @@ footer {
     }
 }
 .licite {
+    margin-top: 80px;
     p {
         font-weight: 400;
         font-size: 24px;
@@ -271,10 +271,12 @@ footer {
     }
 }
 .qualidades {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    display: flex;
     text-align: center;
+    justify-content:center;
     span {
+        padding-left: 80px;
         color: #000000;
     }
 }
@@ -556,6 +558,90 @@ footer {
             font-size: 12px;
             color: $secondary-color;
             font-weight: 500;
+        }
+    }
+}
+
+
+
+
+//// pagina termos de vendas 
+.condicoes{
+    h6{
+        width: 100%;
+        color: #000;
+        font-weight: 400;
+    }
+    h1{
+        text-align: center;
+        color: #000;
+        font-weight: 300;
+        span{
+            font-weight: 900;
+            color: $secondary-color;
+        }
+    }
+    .compete{
+        text-align: center;
+        color: #000;
+        font-size: 15px;
+    }
+    .licite{
+        span{
+            color: #000;
+            font-weight: 600;
+            .magro{
+                font-weight: 400;
+            }
+        }
+    }
+}
+ol{
+    .titulo{
+        list-style-type: upper-alpha;
+        color: $primary-color;
+        font-weight: 600;
+        p{
+            color: #000000;
+            font-weight: 400;
+        }
+    }
+}
+.logar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .btn-login{
+        width: 150px;
+        .btn-primary{
+            width: 100%;
+            font-weight: 900;
+        }
+    }
+    .btn-registo{
+        width: 150px;
+        .btn-outline-primary{
+            width: 100%;
+            font-weight: 900;
+        }     
+    }
+}
+/////dicas sobre fotografias
+
+.camera{
+
+    img{
+        width: 100%;
+    }
+}
+ol{
+    .titulo-1{
+        list-style-type:disc;
+        color: $primary-color;
+        font-weight: 600;
+        p{
+            color: #000000;
+            font-weight: 400;
         }
     }
 }

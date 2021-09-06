@@ -39,7 +39,7 @@
 
                         <li class="nav-item">
                             <div class="pesquisa">
-                                <input type="search" id="search" placeholder=" Pesquisa">
+                                <input type="search" id="search" placeholder="    Pesquisa">
                                 <img src="assets/img/site/search.png" alt="">
                             </div>
                         </li>
@@ -281,7 +281,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div>
         @yield('content')
     </div>
     <div class="vcl">
@@ -345,7 +345,7 @@
                         <h1>Comprar e Vender</h1>
                     </li>
                     <li>
-                        <a href="">Como Comprar</a>
+                        <a href="dicas-como-comprar">Como Comprar</a>
                     </li>
                     <li>
                         <a href="">Código de Boas Práticas Comerciais</a>
@@ -354,7 +354,7 @@
                         <a href="">Como Vender</a>
                     </li>
                     <li>
-                        <a href="">Dicas de Fotografias</a>
+                        <a href="dicas-fotografia">Dicas de Fotografias</a>
                     </li>
                 </ul>
             </div>
@@ -364,7 +364,7 @@
                         <h1>Termos E Condições</h1>
                     </li>
                     <li class="nav-item">
-                        <a href="">Condições Gerais de Vendas</a>
+                        <a href="/vendas">Condições Gerais de Vendas</a>
                     </li>
                     <li class="nav-item">
                         <a href="">Política da Privacidade</a>
@@ -383,7 +383,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="newsletters">
+            <div class="link-util newsletters">
                 <div class="titulo-footer">
                     <h1>Fique Informado Diariamente <br> com as nossas newsletters</h1>
                 </div>

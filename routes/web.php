@@ -25,5 +25,14 @@ Route::get('/', function () {
     return view('site.home');
 });
 Route::get('/sobre', function () {
-    return view('site.sobre');
+    return view('site.sobres.sobre');
+});
+Route::get('vendas', function () {
+    return view('site.termos.vendas');
+});
+Route::get('dicas-fotografia', function () {
+    return view('site.dicas.fotografia');
+});
+Route::get('dicas-como-comprar', function () {
+    return view('site.dicas.comprar');
 });
