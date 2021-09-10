@@ -335,7 +335,7 @@
                         <a href="">FAQs</a>
                     </li>
                     <li>
-                        <a href="imprensa">IMPRENSA</a>
+                        <a href="imprensa">imprensa</a>
                     </li>
                     <li>
                         <a href="">Contatos</a>
