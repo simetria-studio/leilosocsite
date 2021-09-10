@@ -351,7 +351,7 @@
                         <a href="">Código de Boas Práticas Comerciais</a>
                     </li>
                     <li>
-                        <a href="">Como Vender</a>
+                        <a href="dicas-como-vender">Como Vender</a>
                     </li>
                     <li>
                         <a href="dicas-fotografia">Dicas de Fotografias</a>

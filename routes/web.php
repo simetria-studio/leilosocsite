@@ -36,3 +36,9 @@ Route::get('dicas-fotografia', function () {
 Route::get('dicas-como-comprar', function () {
     return view('site.dicas.comprar');
 });
+Route::get('dicas-como-vender', function () {
+    return view('site.dicas.vender');
+});
+Route::get('imprensa', function () {
+    return view('site.imprensa');
+});

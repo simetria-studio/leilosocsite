@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
-    color: gray;
 }
 $primary-color: #41a7d9;
 $secondary-color: #292623;
@@ -274,7 +273,7 @@ footer {
     margin-top: 30px;
     display: flex;
     text-align: center;
-    justify-content:center;
+    justify-content: center;
     span {
         padding-left: 80px;
         color: #000000;
@@ -535,27 +534,26 @@ footer {
         text-align: center;
     }
 }
-.suporte{
+.suporte {
     width: 740px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    .imagem{
-
+    .imagem {
         width: 300px;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
     }
-    .texto{
+    .texto {
         width: 462px;
-        h1{
+        h1 {
             font-size: 20px;
-            font-weight:900 ;
+            font-weight: 900;
             color: $secondary-color;
         }
-        p{
+        p {
             font-size: 12px;
             color: $secondary-color;
             font-weight: 500;
@@ -563,86 +561,472 @@ footer {
     }
 }
 
-
-
-
-//// pagina termos de vendas 
-.condicoes{
-    h6{
+//// pagina termos de vendas
+.condicoes {
+    h6 {
         width: 100%;
         color: #000;
         font-weight: 400;
     }
-    h1{
+    h1 {
         text-align: center;
         color: #000;
         font-weight: 300;
-        span{
+        span {
             font-weight: 900;
             color: $secondary-color;
         }
     }
-    .compete{
+    .compete {
         text-align: center;
         color: #000;
         font-size: 15px;
     }
-    .licite{
-        span{
+    .licite {
+        span {
             color: #000;
             font-weight: 600;
-            .magro{
+            .magro {
                 font-weight: 400;
             }
         }
     }
 }
-ol{
-    .titulo{
+ol {
+    .titulo {
         list-style-type: upper-alpha;
         color: $primary-color;
         font-weight: 600;
-        p{
+        p {
             color: #000000;
             font-weight: 400;
         }
     }
 }
-.logar{
+.logar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    .btn-login{
+    .btn-login {
         width: 150px;
-        .btn-primary{
+        .btn-primary {
             width: 100%;
             font-weight: 900;
         }
     }
-    .btn-registo{
+    .btn-registo {
         width: 150px;
-        .btn-outline-primary{
+        .btn-outline-primary {
             width: 100%;
             font-weight: 900;
-        }     
+        }
     }
 }
 /////dicas sobre fotografias
 
-.camera{
-
-    img{
+.camera {
+    img {
         width: 100%;
     }
 }
-ol{
-    .titulo-1{
-        list-style-type:disc;
+ol {
+    .titulo-1 {
+        list-style-type: disc;
         color: $primary-color;
         font-weight: 600;
-        p{
+        p {
             color: #000000;
             font-weight: 400;
+        }
+    }
+}
+//////dicas de como comprar
+.conteiner {
+    margin: 0 150px;
+}
+.container_1 {
+    margin: 0 50px;
+}
+.breadcrumb {
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+}
+.primeiro {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 18px;
+        font-weight: 400;
+        color: #393534;
+    }
+    .contate {
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            a {
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
+}
+.contate-nos {
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+.venda4 {
+    position: relative;
+    bottom: 400px;
+    h4 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+}
+.formulario {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    bottom: 320px;
+    left: 780px;
+    box-shadow: #000 3px 3px 20px;
+    width: 350px;
+    .container_2 {
+        margin: 40px 40px;
+        h1 {
+            padding-top: 20px;
+            font-size: 18px;
+            font-weight: 400;
+            color: gray;
+        }
+    }
+    .input-group {
+        .form-select {
+            color: $primary-color !important;
+        }
+
+        .form-control {
+            border: #000 1px solid;
+            border-radius: 0;
+        }
+        textarea {
+            border: none;
+            outline: none;
+            color: gray;
+        }
+        textarea:hover {
+            border: none;
+            outline: none;
+        }
+    }
+    .enviar {
+        button {
+            background-color: $primary-color;
+            border: none;
+            font-size: 14px;
+            width: 150px;
+        }
+    }
+}
+
+.dois_bloco {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+    bottom: 250px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    .texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        .number {
+            margin-right: 20px;
+            h1 {
+                font-size: 160px;
+                color: $primary-color;
+            }
+        }
+        .titulo {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .imagem {
+        margin-bottom: 30px;
+        object-fit: contain;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.informacoes {
+    position: relative;
+    bottom: 150px;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .texto {
+        h1 {
+            font-size: 160px;
+            color: $primary-color;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            color: #393534;
+        }
+        h6 {
+            font-weight: 700;
+            color: #393534;
+        }
+    }
+}
+
+.as-vantagem {
+    .texto {
+        margin: 0 auto;
+        width: 550px;
+        h4 {
+            font-weight: 300;
+            font-size: 24px;
+            color: #292623;
+        }
+    }
+}
+.bigsquare {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    h5 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+.calendario {
+    background-color: $primary-color;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    a {
+        margin-top: 20px;
+        color: white;
+        border: white 1px solid;
+    }
+    a:hover {
+        outline: none;
+        background-color: transparent;
+        border: white 1px solid;
+    }
+    h3 {
+        color: white;
+    }
+}
+
+///imprensa
+.contate-nos {
+    .formulario {
+        .container_2 {
+            height: 450px;
+            .imprensa {
+                font-size: 28px;
+            }
+            .te {
+                font-size: 13px;
+            }
+        }
+        a {
+            width: 150px;
+            background-color: $primary-color;
+            border: none;
+        }
+    }
+}
+.anuncio-leilosoc {
+    position: relative;
+    bottom: 230px;
+    .titulo {
+        h4 {
+            font-size: 28px;
+            font-weight: 400;
+            color: #393534;
+        }
+    }
+    .filtro-date {
+        text-align: end;
+        .btn-group {
+            padding-left: 20px;
+            button {
+                background-color: transparent;
+                border: gray 1px solid;
+                color: gray;
+            }
+        }
+    }
+    .agenda {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .pagina {
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .date {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                span {
+                    font-size: 14px;
+                    color: gray;
+                }
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: gray;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.noticia-leilosoc {
+    position: relative;
+    bottom: 230px;
+    .titulo {
+        h4 {
+            font-size: 28px;
+            font-weight: 400;
+            color: #393534;
+        }
+    }
+    .filtro-date {
+        text-align: end;
+        .btn-group {
+            padding-left: 20px;
+            button {
+                background-color: transparent;
+                border: gray 1px solid;
+                color: gray;
+            }
+        }
+    }
+    .noticias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        .imagem {
+            width: 450px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .texto {
+            p{
+                color: gray;
+            }
+            width: 700px;
+            .grande-premio {
+                font-size: 11px;
+            }
+            .data {
+                font-size: 12px;
+                font-weight: 600;
+                color: #000 !important;
+            }
+            .conteudo {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+.certificacao {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    .npl {
+        .imagem {
+            border: none;
+        }
+    }
+    .texto {
+        p {
+            font-size: 10px;
+            color: gray;
+        }
+        .link {
+            a {
+                text-decoration: none;
+                color: gray;
+            }
+        }
+    }
+    .data {
+        font-size: 12px;
+        font-weight: 600;
+        color: #000 !important;
+    }
+    .imagem {
+        border: gray 1px solid;
+        border-radius: 10px;
+    }
+}
+.blog {
+    position: relative;
+    bottom: 230px;
+    .titulo{
+        h4{
+            font-weight: 400;
+            color: #393534;
+        }
+
+    }
+    .curiosidades {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        .texto {
+            h6 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 10px;
+                font-weight: 400;
+                color: gray;
+            }
         }
     }
 }
