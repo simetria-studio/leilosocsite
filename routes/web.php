@@ -42,3 +42,13 @@ Route::get('dicas-como-vender', function () {
 Route::get('imprensa', function () {
     return view('site.imprensa');
 });
+
+
+
+//LEILAO
+Route::get('leilao', function () {
+    return view('site.leilao.leilao');
+});
+Route::get('leilao/descricao', function () {
+    return view('site.leilao.single');
+});

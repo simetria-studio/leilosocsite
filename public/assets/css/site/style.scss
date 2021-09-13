@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 $primary-color: #41a7d9;
 $secondary-color: #292623;
@@ -23,14 +24,11 @@ ul {
 }
 // Cabeçalho
 header {
-    background-color: white !important;
     nav {
-        background-color: white !important;
         height: 96px;
         border-top: #9f9f9f 0.75px solid;
         border-bottom: #9f9f9f 0.75px solid;
         .navbar {
-            background-color: white !important;
             padding: 20px 0;
         }
         .nav-item {
@@ -956,7 +954,7 @@ ol {
             }
         }
         .texto {
-            p{
+            p {
                 color: gray;
             }
             width: 700px;
@@ -1008,12 +1006,11 @@ ol {
 .blog {
     position: relative;
     bottom: 230px;
-    .titulo{
-        h4{
+    .titulo {
+        h4 {
             font-weight: 400;
             color: #393534;
         }
-
     }
     .curiosidades {
         display: grid;
@@ -1028,6 +1025,431 @@ ol {
                 font-size: 10px;
                 font-weight: 400;
                 color: gray;
+            }
+        }
+    }
+}
+// LEILÕES
+.first {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 5fr;
+
+    .aside {
+        margin-top: 30px;
+        .titulo {
+            p {
+                color: gray;
+            }
+        }
+        .refe-lote {
+            span {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+        .fechamento {
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: #484e57;
+            }
+            .hora {
+                color: $primary-color;
+                font-size: 22px;
+                font-weight: 900;
+                text-align: center;
+                padding-left: 20px;
+            }
+        }
+        .button-group {
+            .button {
+                a {
+                    width: 250px !important;
+                    margin-left: 20px;
+                    color: $primary-color;
+                    font-weight: 700;
+                }
+            }
+
+            .guardar {
+                a {
+                    border: $primary-color 1px solid;
+                    outline: none;
+                }
+                a:hover {
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+            .previo {
+                a {
+                    background-color: $primary-color;
+                    color: white !important;
+                    border: none;
+                }
+            }
+            .detalhe {
+                a {
+                    background-color: white !important;
+                    border: none;
+                }
+            }
+            .visita {
+                a {
+                    border: $primary-color 1px solid;
+                    outline: none;
+                }
+                a:hover {
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+        }
+        .pesquisa {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            input {
+                text-align: center;
+                width: 250px !important;
+                margin-left: 20px;
+                border: none;
+                outline: none;
+                color: #393534;
+            }
+        }
+        .filtros-leilao {
+            .titulo {
+                h5 {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+        .accordion {
+            .accordion-item {
+                .accordion-button {
+                    font-weight: 600;
+                    outline: none;
+                    color: #000;
+                }
+                .accordion-button:hover {
+                    color: #000;
+                    outline: none;
+                }
+            }
+        }
+        .baixaqui {
+            border-top: gray 1px solid;
+            border-bottom: gray 1px solid;
+            height: 80px;
+            margin-top: 100px;
+            display: flex;
+            position: relative;
+            top: 330px;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+                padding-left: 26px;
+                font-size: 12px;
+                color: gray;
+            }
+        }
+    }
+    .meio {
+        margin-top: 90px;
+        .eletronico {
+            display: flex;
+            justify-content: end;
+            margin-right: 100px;
+        }
+        .titulo {
+            p {
+                color: gray;
+            }
+            h3 {
+                font-weight: 600;
+                color: #393534;
+            }
+        }
+        .pedro-campos {
+            display: flex;
+            justify-content: space-between;
+            .contatos {
+                display: flex;
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    color: gray;
+                    span {
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .lote-number {
+                margin-left: 150px;
+                color: $primary-color;
+                span {
+                    font-weight: 800;
+                }
+            }
+        }
+        .item-leilao {
+            .lote {
+                margin-bottom: 50px;
+                display: flex;
+                .lote-imagem {
+                    width: 300px;
+                    height: 250px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .lote-info {
+                    margin-left: 10px;
+                    border-left: #000000 1px solid;
+                    border-right: #000000 1px solid;
+                    .geral-info {
+                        width: 470px;
+                        margin: 30px 20px;
+                        h6 {
+                            font-weight: 600;
+                        }
+                        span {
+                            font-size: 14px;
+                        }
+                        .valor {
+                            margin-top: 50px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            p {
+                                span {
+                                    font-weight: 600;
+                                }
+                            }
+                            .ver-lote {
+                                a {
+                                    background-color: $primary-color !important;
+                                    border: none;
+                                    width: 80px;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// LEILOES DESCRICÕES DOS PRODUTOS
+.head {
+    width: 1050px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 900;
+        }
+    }
+}
+.body {
+    .nome {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .icones {
+            width: 413px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .icone-1 {
+                border: none;
+                padding-top: 10px;
+            }
+            .icone {
+                border: gray 1px solid;
+                border-radius: 3px;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .referencia-lote {
+        position: relative;
+        bottom: 30px;
+        span {
+            color: gray;
+        }
+    }
+    .colunas {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 2fr 1fr;
+
+        .coluna-1 {
+            border-radius: 15px;
+            ul {
+                list-style: none;
+            }
+            img {
+                max-width: 100%;
+            }
+            .cover {
+                width: 100%;
+            }
+            .thumbs {
+                display: flex;
+                width: 100%;
+                margin-top: 20px;
+                li {
+                    cursor: pointer;
+                    border: 2px solid #ccc;
+                    width: calc((100% - 10%) / 6);
+                }
+                li:hover {
+                    border: 2px solid #999;
+                }
+                li.active {
+                    border: 2px solid #999;
+                }
+            }
+            .titulo {
+                color: rgb(110, 109, 109);
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .documentos {
+                display: flex;
+                margin-top: 50px;
+                .titulo {
+                    color: rgb(110, 109, 109);
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                .icones {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                    .items {
+                        width: 100px;
+                        display: flex;
+                        align-items: center;
+                        margin: 0 auto;
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-size: 10px;
+                            color: rgb(110, 109, 109);
+                            margin: 0 auto;
+                        }
+                    }
+                    .items1 {
+                        width: 100px;
+                        a {
+                            display: flex;
+                            text-decoration: none;
+                            img {
+                                margin-top: 6px;
+                                width: 15px;
+                                height: 22px;
+                            }
+                            span {
+                                color: rgb(110, 109, 109);
+                                font-size: 10px;
+                                padding-left: 5px;
+                                line-height: 10px;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .coluna-2 {
+            .azul {
+                background-color: $primary-color;
+                color: white;
+                text-align: center;
+                height: 100px;
+                border-radius: 5px;
+                padding-top: 10px;
+            }
+            .alinhamento {
+                width: 450px;
+                margin: 0 auto;
+            }
+            span {
+                font-weight: 600;
+                color: rgb(97, 93, 93);
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+            h5 {
+                font-size: 16px;
+                font-weight: 800;
+            }
+            button {
+                font-size: 12px;
+            }
+            .valor-minimo {
+                height: 50px;
+                margin-top: 5px;
+                border-bottom: $primary-color 1px solid;
+            }
+            .valor-abertura {
+                border-bottom: $primary-color 1px solid;
+            }
+            .licitacao {
+                .valor {
+                    button {
+                        width: 80px;
+                        background-color: $primary-color;
+                        border: none;
+                    }
+                }
+            }
+            .valor-1 {
+                button {
+                    border: none;
+                    background-color: $primary-color;
+                    width: 180px;
+                    font-size: 12px;
+                }
+            }
+            .total {
+                button {
+                    border: gray 1px solid;
+                    color: gray;
+                    outline: none;
+                }
+                button:hover {
+                    outline: none;
+                    background-color: transparent;
+                }
             }
         }
     }

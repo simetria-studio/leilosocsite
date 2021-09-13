@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,23 +30,23 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <div class="nav-item">
-                            <a class="nav-link" href="/"><img src="assets/img/site/logo-padrao.png" alt=""></a>
+                            <a class="nav-link" href="/"><img src="{{ url("assets/img/site/logo-padrao.png") }} " alt=""></a>
                         </div>
-                        <li class="nav-item"><a class="nav-link" href="#">Leilões</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/leilao">Leilões</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
 
                         <li class="nav-item">
                             <div class="pesquisa">
                                 <input type="search" id="search" placeholder="    Pesquisa">
-                                <img src="assets/img/site/search.png" alt="">
+                                <img src="{{ url("assets/img/site/search.png") }} " alt="">
                             </div>
                         </li>
                         {{-- MARKET DROPDOWN --}}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/img/site/globe.png" alt="">Market
+                                <img src="{{ url("assets/img/site/globe.png") }} " alt="">Market
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
@@ -153,7 +152,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/img/site/user.png" alt="">LOGIN
+                                <img src="{{ url("assets/img/site/user.png") }}" alt="">LOGIN
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
@@ -207,7 +206,7 @@
                         <li class="nav-item">
                             <a href="#sidebar" class="d-block " data-bs-toggle="offcanvas" role="button"
                                 aria-controls="sidebar">
-                                <img src="assets/img/site/menu.png" alt="">
+                                <img src="{{ url("assets/img/site/menu.png") }}" alt="">
                             </a>
                         </li>
 
@@ -403,7 +402,7 @@
         </div>
         <div class="footer">
             <div>
-                <img src="assets/img/site/footer.png" alt="">
+                <img src="{{ url("assets/img/site/footer.png") }}" alt="">
             </div>
             <div class="direitos">
                 <p>© LEILOSOC® Todos os direitos reservados | LEILÕES.PT</p>
@@ -411,6 +410,7 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -418,7 +418,11 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="assets/js/site/script.js"></script>
+    <script src="{{ url("assets/js/site/script.js") }}"></script>
+    <script src="{{ url("assets/js/site/leilao/product-single.js") }}"></script>
+
+
+
 </body>
 
 </html>
