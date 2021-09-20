@@ -52,3 +52,12 @@ Route::get('leilao', function () {
 Route::get('leilao/descricao', function () {
     return view('site.leilao.single');
 });
+
+
+//login
+Route::get('/login', function () {
+    return view('site.login.index');
+});
+Route::get('/registo', function () {
+    return view('site.login.registo');
+});

@@ -118,55 +118,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5" style="border: red 1px solid">
-                        <div>
+                    <div class="detalhes mt-5">
+                        <div class="titulo">
                             <span>DETALHES:</span>
                         </div>
                         <div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Processo</span>
-                                <span>BMP-521</span>
+                            <div class="detail-item">
+                                <span class="one">Processo</span>
+                                <span class="two">BMP-521</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Marca </span>
-                                <span>JAGUAR</span>
+                            <div class="detail-item">
+                                <span class="one">Marca </span>
+                                <span class="two">JAGUAR</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Modelo </span>
-                                <span>Jaguar F-Pace 3.0 TDV6 AWD Auto Prestige</span>
+                            <div class="detail-item">
+                                <span class="one">Modelo </span>
+                                <span class="two">Jaguar F-Pace 3.0 TDV6 AWD Auto Prestige</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Combustível</span>
-                                <span>Diesel</span>
+                            <div class="detail-item">
+                                <span class="one">Combustível</span>
+                                <span class="two">Diesel</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Ano </span>
-                                <span>2016</span>
+                            <div class="detail-item">
+                                <span class="one">Ano </span>
+                                <span class="two">2016</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Quilómetros</span>
-                                <span></span>
+                            <div class="detail-item">
+                                <span class="one">Quilómetros</span>
+                                <span class="two"></span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Matrícula</span>
-                                <span>11-RJ-60</span>
+                            <div class="detail-item">
+                                <span class="one">Matrícula</span>
+                                <span class="two">11-RJ-60</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Cilindrada</span>
-                                <span>2.993 cm3</span>
+                            <div class="detail-item">
+                                <span class="one">Cilindrada</span>
+                                <span class="two">2.993 cm3</span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Potência</span>
-                                <span>301 cv </span>
+                            <div class="detail-item">
+                                <span class="one">Potência</span>
+                                <span class="two">301 cv </span>
                             </div>
-                            <div class="d-flex  justify-content-between">
-                                <span>Cor</span>
-                                <span>Dark sapphire Blue metalizado</span>
+                            <div class="detail-item">
+                                <span class="one">Cor</span>
+                                <span class="two">Dark sapphire Blue metalizado</span>
                             </div>
-                            <div>
-                                <span>Descrição</span>
+                            <div class="detail-item-1">
+                                <span class="one">Descrição</span>
                                 <br>
-                                <span>
+                                <span class="two">
                                     Jantes em liga leve; Medida das jantes; Venom 20" (5 Raios duplos) com acabamento Grey
                                     & Diamond Turned;
                                     Bagageira com tampa com accionamento elétrico (inc. Fecho automático de portas); Câmara
@@ -176,89 +176,102 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5">
-                        <div>
+                    <div class="vem-com mt-5">
+                        <div class="titulo">
                             <span>ESTE VEÍCULO VEM COM:</span>
                         </div>
-                        <div class="row">
-                            <div class="vidros col-4">
-                                <span>Vidros</span>
+                        <div class="template-grid">
+                            <div class="acessorios mt-3">
+                                <span class="one">Vidros</span>
                                 <div>
-                                    <span>Vidros fumados "Privacy"</span>
+                                    <span class="two">Vidros fumados "Privacy"</span>
                                 </div>
                             </div>
-                            <div class="bancos col-4">
-                                <span>Bancos</span>
+                            <div class="acessorios mt-3">
+                                <span class="one">Bancos</span>
                                 <div>
-                                    <span>
+                                    <span class="two">
                                         Bancos dianteiros com 10/10 ajustes
                                         elétricos com função de memória.
                                     </span>
                                 </div>
                             </div>
-                            <div>
-                                <span>Segurança e Desempenho</span>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <span>
-                                            Smart Key System.
-                                        </span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>
-                                            Porta-luvas refrigerada
-                                        </span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>
-                                            InControl Touch Pro Pack com
-                                            sistema de áudio 380w.
-                                        </span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>
-                                            Sensor Qualidade do Ar.
-                                        </span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>
-                                            Roda de reserva de secção reduzida
-                                        </span>
-                                    </div>
+                        </div>
+                        <div class="mt-3">
+                            <span class="one">Segurança e Desempenho</span>
+                        </div>
+                        <div class="template-grid mt-2">
+                            <div class="acessorios">
+                                <div>
+                                    <span class="two">
+                                        Smart Key System.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="acessorios">
+                                <div>
+                                    <span class="two">
+                                        Porta-luvas refrigerada
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="acessorios">
+                                <div>
+                                    <span class="two">
+                                        InControl Touch Pro Pack com
+                                        sistema de áudio 380w.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="acessorios">
+                                <div>
+                                    <span class="two">
+                                        Sensor Qualidade do Ar.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="acessorios">
+                                <div>
+                                    <span class="two">
+                                        Roda de reserva de secção reduzida
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-5">
-                        <div>
+
+                    <div class="localizacao mt-5">
+                        <div class="titulo">
                             <span>LOCALIZAÇÃO:</span>
                         </div>
-                        <div>
-                            <span>
+                        <div class="endereco">
+                            <span class="two">
                                 Estrada Lagoa do Madeiro, n.º 61 - Samora Correia
-                                Benavente - Portugal <br>
-                                <a href="">ver mapa</a>
+                                Benavente - Portugal
+                                <div>
+                                    <a href="">ver mapa</a>
+                                </div>
                             </span>
                         </div>
                     </div>
-                    <div class="mt-5 d-flex justify-content-around align-items-center">
-                        <div>
+                    <div class="visitas">
+                        <div class="titulo">
                             <span>VISITAS:</span>
                         </div>
                         <div>
-                            <span>Por marcação através de visitas@leilosoc.pt</span>
+                            <span class="two">Por marcação através de visitas@leilosoc.pt</span>
                         </div>
                         <div>
                             <button class="btn btn-outline-primary">MARCAR VISITA</button>
                         </div>
                     </div>
-                    <div class="mt-5 d-flex justify-content-around align-items-center">
-                        <div>
-                            <span>PREVISÃO DE ENTREGA DOS BENS:</span>
+                    <div class="previsao-entrega">
+                        <div class="titulo">
+                            <span class="one">PREVISÃO DE ENTREGA DOS BENS:</span>
                         </div>
                         <div>
-                            <span>3 dias úteis após a liquidação de todos os valores.</span>
+                            <span class="two">3 dias úteis após a liquidação de todos os valores.</span>
                         </div>
                     </div>
 
@@ -284,11 +297,11 @@
                             </div>
                         </div>
                         <div class="valor-abertura mt-3">
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mb-2">
                                 <span>VALOR ABERTURA:</span>
                                 <span>25 000€</span>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mb-2">
                                 <h5>LICITAÇÃO ATUAL:</h5>
                                 <h5>32 500€</h5>
                             </div>
@@ -329,11 +342,191 @@
                             <div class="mt-3">
                                 <span>15 LICITAÇÕES</span>
                             </div>
-                            <div class="mt-3 total">
+                            <div class=" total">
                                 <div class="d-flex justify-content-end">
                                     <button class="btn btn-outline-primary">CALCULAR PREÇO TOTAL</button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="direita">
+                        <div class="titulo">
+                            <span class="one">LICITAÇÕES</span>
+                        </div>
+                        <div class="licitadores">
+                            <div>
+                                <img src="{{ url('assets/img/site/leilao/single/portugal.png') }}" alt="">
+                                <span>Licitador 108216</span>
+                            </div>
+                            <div>
+                                <span>32 500,00€</span>
+                            </div>
+                        </div>
+                        <div class="ver-todos">
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="É necessário efetuar o Login">
+                                Ver todas as licitações
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="direita_1">
+                        <div class="titulo">
+                            <span class="one">
+                                INFORMAÇÃO DO VENDEDOR:
+                            </span>
+                        </div>
+                        <div class="vendedor mt-3">
+                            <div class="foto">
+                                <img src="{{ url('assets/img/site/leilao/ativo4.png') }}" alt="">
+                            </div>
+                            <div class="vendedor-detail">
+                                <div class="nome d-flex">
+                                    <div>
+                                        <span class="name">
+                                            Pedro Campos
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="barra"> / </span>
+                                    </div>
+                                    <div>
+                                        <span> Comercial</span>
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <span>
+                                        pedrocampos@leilosoc.pt
+                                    </span>
+                                </div>
+                                <div class="telefone">
+                                    <span>
+                                        Tel. +351 913 976 393
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="contactar">
+                                <a class="btn btn-outline-primary">CONTACTAR COMERCIAL</a>
+                            </div>
+                        </div>
+                        <div class="avaliacao mt-3">
+                            <span>
+                                <ion-icon class="thumbs-up" name="thumbs-up"></ion-icon>
+                            </span>
+                            <span>88.2%</span>
+                            <span>17 avaliações</span>
+                        </div>
+                        <div class="pagamentos">
+                            <div class="titulo">
+                                <span>OPÇÕES DE PAGAMENTOS:</span>
+                            </div>
+                            <div class="cards">
+                                <div class="bandeira-card">
+                                    <img src="{{ url('assets/img/site/leilao/single/ativo7.png') }}" alt="">
+                                </div>
+                                <div class="bandeira-card">
+                                    <img src="{{ url('assets/img/site/leilao/single/ativo8.png') }}" alt="">
+                                </div>
+                                <div class="bandeira-card">
+                                    <img src="{{ url('assets/img/site/leilao/single/ativo9.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="letters">
+                    <div class="titulo">
+                        <h6>FIQUE INFORMADO DIARIAMENTE <br>
+                            COM AS NOSSAS NEWSLETTERS.
+                        </h6>
+                    </div>
+                    <p>
+                        Subscreva já e receba o que a Leilosoc® tem de melhor para lhe oferecer no seu email.
+                    </p>
+
+                    <div>
+                        <input type="email" name="news" id="news" placeholder="  Preencha o seu email">
+                        <label for="news">SUBSCREVA</label>
+                    </div>
+                </div>
+                <div class="letters">
+                    <div class="titulo">
+                        <h6>
+                            DÊ A SUA OPINIÃO <br>
+                            SOBRE O VENDEDOR
+                        </h6>
+                    </div>
+                    <div class="avaliable">
+                        <div>
+                            <span class="btn">
+                                <p>16</p>
+                                <ion-icon name="thumbs-up" id="thumbs-up"></ion-icon> Positiva
+                            </span>
+                        </div>
+                        <div>
+                            <span class="btn">
+                                <p> 1 </p>
+                                <ion-icon name="thumbs-down" id="thumbs-down1"></ion-icon> Neutra
+                            </span>
+                        </div>
+                        <div>
+                            <span class="btn">
+                                <p>1</p>
+                                <ion-icon name="thumbs-down" id="thumbs-down"></ion-icon> Negativa
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sobre-vendedor">
+                        <input type="text" name="news" id="news" placeholder="  Adicione um comentário">
+                        <label for="news">ENVIAR AVALIAÇÃO</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ver-mais">
+                <div class="titulo text-center mb-3">
+                    <h4>Poderá ter interesse em + veículos</h4>
+                </div>
+                <div class="mesma-categoria">
+                    <div class="items">
+                        <div>
+                            <img src="{{ url('assets/img/site/leilao/ativo3.png') }}" alt="">
+                        </div>
+                        <div class="borda-estranha">
+                            <div>
+                                <h6>PORSCHE 911 GT3 RS COUPÉ (2016)</h6>
+                                <span>Referência: 75625</span>
+                            </div>
+                            <div>
+                                <p>11 Licitações</p>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <h6>VALOR BASE: 187 500€</h6>
+                                    <h6>LICITAÇÃO ATUAL: 190 500€</h6>
+                                </div>
+                                <div>
+                                    <a href="" class="btn btn-primary">VER +</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <img src="{{ url('assets/img/site/leilao/ativo2.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <img src="{{ url('assets/img/site/leilao/ativo1.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <img src="{{ url('assets/img/site/leilao/ativo3.png') }}" alt="">
                         </div>
                     </div>
                 </div>
