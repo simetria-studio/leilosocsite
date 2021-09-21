@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +31,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <div class="nav-item">
-                            <a class="nav-link" href="/"><img src="{{ url("assets/img/site/logo-padrao.png") }} " alt=""></a>
+                            <a class="nav-link" href="/"><img src="{{ url('assets/img/site/logo-padrao.png') }} "
+                                    alt=""></a>
                         </div>
                         <li class="nav-item"><a class="nav-link" href="/leilao">Leilões</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
@@ -39,14 +41,14 @@
                         <li class="nav-item">
                             <div class="pesquisa">
                                 <input type="search" id="search" placeholder="    Pesquisa">
-                                <img src="{{ url("assets/img/site/search.png") }} " alt="">
+                                <img src="{{ url('assets/img/site/search.png') }} " alt="">
                             </div>
                         </li>
                         {{-- MARKET DROPDOWN --}}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{ url("assets/img/site/globe.png") }} " alt="">Market
+                                <img src="{{ url('assets/img/site/globe.png') }} " alt="">Market
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
@@ -148,21 +150,24 @@
 
                             </ul>
                         </li>
-
+                        @php
+                            $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
+                        @endphp
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{ url("assets/img/site/user.png") }}" alt="">LOGIN
+                                <img src="{{ url('assets/img/site/user.png') }}" alt="">@if (Auth::check()){{ $user->nome }}
+                            @else
+                            LOGIN
+                                @endif
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    @if(Auth::check())
-                                    @php
-                                       $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
-                                    @endphp
-                                    <h6>{{ $user->nome }}</h6>
+                                    @if (Auth::check())
+
+                                        <h6>{{ $user->nome }}</h6>
                                     @else
-                                    <h6>Faça Login</h6>
+                                        <h6>Faça Login</h6>
                                     @endif
                                 </li>
 
@@ -170,7 +175,8 @@
                                     <hr class="dropdown-divider">
                                 </li>
 
-                                <li class="dropdown-submenu"><a class="dropdown-item" href="{{ route('site.login') }}">A MINHA CONTA</a></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item"
+                                        href="{{ route('site.login') }}">A MINHA CONTA</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider">
@@ -213,7 +219,7 @@
                         <li class="nav-item">
                             <a href="#sidebar" class="d-block " data-bs-toggle="offcanvas" role="button"
                                 aria-controls="sidebar">
-                                <img src="{{ url("assets/img/site/menu.png") }}" alt="">
+                                <img src="{{ url('assets/img/site/menu.png') }}" alt="">
                             </a>
                         </li>
 
@@ -233,19 +239,19 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li>
                     @if (Auth::check())
-                    <h6>OLÁ {{ $user->nome }}</h6>
+                        <h6>OLÁ {{ $user->nome }}</h6>
                     @else
-                    <h6>OLÁ </h6>
+                        <h6>OLÁ </h6>
                     @endif
                 </li>
                 @if (Auth::check())
-                <li>
-                    <a href="{{ route('site.login') }}">MINHA CONTA</a>
-                </li>
+                    <li>
+                        <a href="{{ route('site.login') }}">MINHA CONTA</a>
+                    </li>
                 @else
-                <li>
-                    <a href="{{ route('site.login') }}">LOGIN / REGISTO</a>
-                </li>
+                    <li>
+                        <a href="{{ route('site.login') }}">LOGIN / REGISTO</a>
+                    </li>
                 @endif
 
                 <li>
@@ -417,7 +423,7 @@
         </div>
         <div class="footer">
             <div>
-                <img src="{{ url("assets/img/site/footer.png") }}" alt="">
+                <img src="{{ url('assets/img/site/footer.png') }}" alt="">
             </div>
             <div class="direitos">
                 <p>© LEILOSOC® Todos os direitos reservados | LEILÕES.PT</p>
@@ -433,8 +439,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="{{ url("assets/js/site/script.js") }}"></script>
-    <script src="{{ url("assets/js/site/leilao/product-single.js") }}"></script>
+    <script src="{{ url('assets/js/site/script.js') }}"></script>
+    <script src="{{ url('assets/js/site/leilao/product-single.js') }}"></script>
 
 
 
