@@ -232,7 +232,9 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li>
+                    @if (Auth::check())
                     <h6>OLÁ {{ $user->nome }}</h6>
+                    @endif
                 </li>
                 @if (Auth::check())
                 <li>
