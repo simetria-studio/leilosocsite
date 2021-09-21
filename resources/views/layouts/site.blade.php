@@ -156,7 +156,12 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <h6>Catarina Silva<br>25986489</h6>
+                                    @if(Auth::check())
+                                    @php
+                                       $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
+                                    @endphp
+                                    <h6>{{ $user->nome }}</h6>
+                                    @endif
                                 </li>
 
                                 <li>
@@ -225,11 +230,18 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li>
-                    <h6>OLÁ</h6>
+                    <h6>OLÁ {{ $user->nome }}</h6>
                 </li>
+                @if (Auth::check())
+                <li>
+                    <a href="{{ route('site.login') }}">MINHA CONTA</a>
+                </li>
+                @else
                 <li>
                     <a href="{{ route('site.login') }}">LOGIN / REGISTO</a>
                 </li>
+                @endif
+
                 <li>
                     <a href="#">CONTATOS</a>
                 </li>

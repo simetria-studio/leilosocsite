@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\Site\RegisterController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Site\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
