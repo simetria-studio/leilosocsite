@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Site\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// backoffice 
+// backoffice
 Route::get('backoffice', function () {
     return view('backoffice.home');
 });
@@ -20,10 +21,18 @@ Route::get('backoffice/banner', function () {
     return view('backoffice.banner');
 });
 
-// site 
+// site
+
+
 Route::get('/', function () {
     return view('site.home');
-});
+})->name('site.home');
+
+Route::get('login-site', [RegisterController::class, 'index'])->name('site.login');
+Route::get('registo-step', [RegisterController::class, 'create'])->name('site.registo.step');
+Route::post('registo', [RegisterController::class, 'store'])->name('site.registo.store');
+Route::post('registo-step', [RegisterController::class, 'infoStore'])->name('site.registo.step');
+
 Route::get('/sobre', function () {
     return view('site.sobres.sobre');
 });
@@ -55,9 +64,11 @@ Route::get('leilao/descricao', function () {
 
 
 //login
-Route::get('/login', function () {
-    return view('site.login.index');
-});
-Route::get('/registo', function () {
-    return view('site.login.registo');
-});
+
+// Route::get('/registo', function () {
+//     return view('site.login.registo');
+// });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

@@ -13,17 +13,17 @@
                     <p>Por favor insira a sua informação de login.</p>
                 </div>
                 <div class="identifique">
-                    <form action="">
+                    <form action="{{ route('login') }}" method="post">
                         @csrf
                         <div class="mb-4">
                             <div>
                                 <label class="form-label" for="email_1">ENDEREÇO DE EMAIL</label> <br>
-                                <input class="form-control" type="email" name="email_1" id="email_1">
+                                <input class="form-control" type="email" name="email" id="email_1">
                             </div>
                         </div>
                         <div class=" mb-4">
                             <label class="form-label" for="senha">PALAVRA-PASSE</label>
-                            <input class="form-control" type="password" name="senha" id="senha" placeholder="  ">
+                            <input class="form-control" type="password" name="password" id="senha" placeholder="  ">
                         </div>
                         <div class="esqueceu-senha mb-4">
                             <div>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="btn-login mb-4">
-                            <button class="btn btn-outline-primary">LOGIN</button>
+                            <button type="submit" class="btn btn-outline-primary">LOGIN</button>
                         </div>
                     </form>
                 </div>
@@ -48,22 +48,28 @@
                     <p>Por favor insira a sua informação para se registar no My LEILOSOC.</p>
                 </div>
                 <div class="identifique">
-                    <form action="">
+                    <form action="{{ route('site.registo.store') }}" method="post">
                         @csrf
                         <div class="mb-4">
                             <label class="form-label" for="email_1">ENDEREÇO DE EMAIL</label> <br>
-                            <input class="form-control" type="email" name="email_1" id="email_1">
+                            <input class="form-control" type="email" name="email" id="email_1">
+                            @if($errors->has('email'))
+                                <div class="error text-danger">{{ $errors->first('email') }}</div>
+                            @endif
                         </div>
                         <div class="mb-4">
                             <label class="form-label" for="email_1">CONFIRMAR DE EMAIL</label> <br>
-                            <input class="form-control" type="email" name="email_1" id="email_1">
+                            <input class="form-control" type="email" id="email_1">
                         </div>
                         <div class="mb-4">
                             <label class="form-label" for="senha">PALAVRA-PASSE</label>
-                            <input class="form-control" type="password" name="senha" id="senha" placeholder="  ">
+                            <input class="form-control" type="password" name="password" id="senha" placeholder="  ">
+                            @if($errors->has('password'))
+                            <div class="error text-danger">{{ $errors->first('password') }}</div>
+                        @endif
                         </div>
                         <div class="btn-login mb-4">
-                            <a href="/registo" class="btn btn-outline-primary">REGISTAR</a>
+                            <button type="submit" class="btn btn-outline-primary">REGISTAR</button>
                         </div>
                     </form>
                 </div>

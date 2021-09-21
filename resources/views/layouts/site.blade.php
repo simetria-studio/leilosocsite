@@ -163,7 +163,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
 
-                                <li class="dropdown-submenu"><a class="dropdown-item" href="#">A MINHA CONTA</a></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item" href="{{ route('site.login') }}">A MINHA CONTA</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider">
@@ -228,7 +228,7 @@
                     <h6>OLÁ</h6>
                 </li>
                 <li>
-                    <a href="#">LOGIN / REGISTO</a>
+                    <a href="{{ route('site.login') }}">LOGIN / REGISTO</a>
                 </li>
                 <li>
                     <a href="#">CONTATOS</a>
@@ -240,9 +240,6 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                     <h6>CATEGORIAS</h6>
-                </li>
-                <li>
-                    <a href=" #">LOGIN / REGISTO</a>
                 </li>
                 <li>
                     <a href=" #">IMÓVEIS</a>
