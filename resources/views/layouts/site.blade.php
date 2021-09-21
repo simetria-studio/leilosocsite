@@ -161,6 +161,8 @@
                                        $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
                                     @endphp
                                     <h6>{{ $user->nome }}</h6>
+                                    @else
+                                    <h6>Faça Login</h6>
                                     @endif
                                 </li>
 
