@@ -234,6 +234,8 @@
                 <li>
                     @if (Auth::check())
                     <h6>OLÁ {{ $user->nome }}</h6>
+                    @else
+                    <h6>OLÁ </h6>
                     @endif
                 </li>
                 @if (Auth::check())
