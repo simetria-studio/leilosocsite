@@ -494,39 +494,117 @@
                         <div>
                             <img src="{{ url('assets/img/site/leilao/ativo3.png') }}" alt="">
                         </div>
-                        <div class="borda-estranha">
-                            <div>
-                                <h6>PORSCHE 911 GT3 RS COUPÉ (2016)</h6>
-                                <span>Referência: 75625</span>
-                            </div>
-                            <div>
-                                <p>11 Licitações</p>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <h6>VALOR BASE: 187 500€</h6>
-                                    <h6>LICITAÇÃO ATUAL: 190 500€</h6>
+                        <div class="borda-estranha mb-4">
+                            <div class="container">
+                                <div class="nome-produto">
+                                    <h1>PORSCHE 911 GT3 RS COUPÉ (2016)</h1>
+                                    <h2>Referência: 75625</h2>
                                 </div>
-                                <div>
-                                    <a href="" class="btn btn-primary">VER +</a>
+                                <div class="mt-3 mb-3">
+                                    <h2>11 Licitações</h2>
+                                </div>
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="valor-base">
+                                            <h1>VALOR BASE: <span>187 500€</span></h1>
+                                        </div>
+                                        <div class="licitacao-atual">
+                                            <h1>LICITAÇÃO ATUAL: 190 500€</h1>
+                                        </div>
+                                    </div>
+                                    <div class="btn-ver-mais">
+                                        <a href="" class="btn btn-primary">VER +</a>
+                                    </div>
                                 </div>
                             </div>
-                           
                         </div>
                     </div>
+
                     <div class="items">
                         <div>
                             <img src="{{ url('assets/img/site/leilao/ativo2.png') }}" alt="">
+                        </div>
+                        <div class="borda-estranha mb-4">
+                            <div class="container">
+                                <div class="nome-produto">
+                                    <h1>PORSCHE 911 GT3 RS COUPÉ (2016)</h1>
+                                    <h2>Referência: 75625</h2>
+                                </div>
+                                <div class="mt-3 mb-3">
+                                    <h2>11 Licitações</h2>
+                                </div>
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="valor-base">
+                                            <h1>VALOR BASE: <span>187 500€</span></h1>
+                                        </div>
+                                        <div class="licitacao-atual">
+                                            <h1>LICITAÇÃO ATUAL: 190 500€</h1>
+                                        </div>
+                                    </div>
+                                    <div class="btn-ver-mais">
+                                        <a href="" class="btn btn-primary">VER +</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="items">
                         <div>
                             <img src="{{ url('assets/img/site/leilao/ativo1.png') }}" alt="">
                         </div>
+                        <div class="borda-estranha mb-4">
+                            <div class="container">
+                                <div class="nome-produto">
+                                    <h1>PORSCHE 911 GT3 RS COUPÉ (2016)</h1>
+                                    <h2>Referência: 75625</h2>
+                                </div>
+                                <div class="mt-3 mb-3">
+                                    <h2>11 Licitações</h2>
+                                </div>
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="valor-base">
+                                            <h1>VALOR BASE: <span>187 500€</span></h1>
+                                        </div>
+                                        <div class="licitacao-atual">
+                                            <h1>LICITAÇÃO ATUAL: 190 500€</h1>
+                                        </div>
+                                    </div>
+                                    <div class="btn-ver-mais">
+                                        <a href="" class="btn btn-primary">VER +</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="items">
                         <div>
                             <img src="{{ url('assets/img/site/leilao/ativo3.png') }}" alt="">
+                        </div>
+                        <div class="borda-estranha mb-4">
+                            <div class="container">
+                                <div class="nome-produto">
+                                    <h1>PORSCHE 911 GT3 RS COUPÉ (2016)</h1>
+                                    <h2>Referência: 75625</h2>
+                                </div>
+                                <div class="mt-3 mb-3">
+                                    <h2>11 Licitações</h2>
+                                </div>
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="valor-base">
+                                            <h1>VALOR BASE: <span>187 500€</span></h1>
+                                        </div>
+                                        <div class="licitacao-atual">
+                                            <h1>LICITAÇÃO ATUAL: 190 500€</h1>
+                                        </div>
+                                    </div>
+                                    <div class="btn-ver-mais">
+                                        <a href="" class="btn btn-primary">VER +</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

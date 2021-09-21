@@ -1709,9 +1709,45 @@ ol {
                     width: 100%;
                 }
                 .borda-estranha {
-                    margin-top: 30px;
+                    margin-top: 10px;
                     border-left: 1px solid gray;
                     border-right: 1px solid gray;
+                    height: 150px;
+                    display: flex;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 10px;
+                        span{
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                    h2 {
+                        font-size: 12px;
+                    }
+                    .nome-produto {
+                        h1 {
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                        h2 {
+                            font-size: 10px;
+                            margin-top: -8px;
+                        }
+                    }
+                    .btn-ver-mais{
+                        padding-left: 10px;
+                        width: 90px;
+                        a{
+                            border: $primary-color 1px solid;
+                            background-color: $primary-color;
+                            border: none;
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -1777,41 +1813,44 @@ ol {
     .registo {
         margin: 0 auto;
     }
-
 }
-.erdar{
-    input{
+.erdar {
+    input {
         width: 250px;
         height: 40px;
         outline: none;
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     }
 }
-.dados-pessoais{
-    h4{
-    font-weight: 300;
-    font-size: 16px;
+.dados-pessoais {
+    h4 {
+        font-weight: 300;
+        font-size: 16px;
     }
 }
-.campos{
-    input, select{
+.campos {
+    input,
+    select {
         height: 40px;
         outline: none;
         display: flex;
         align-items: center;
     }
-    label{
+    label {
         color: #868e96;
     }
-    select{
+    select {
         color: #868e96;
     }
 }
-.subtitulos{
+.subtitulos {
     color: #868e96;
     font-size: 1rem;
     text-transform: uppercase;
-    label{
+    label {
         color: black;
         font-size: 14px;
     }
@@ -1823,19 +1862,22 @@ ol {
     overflow: hidden;
     overflow-y: scroll;
 }
-.btn-registo{
+.btn-registo {
     text-align: center;
-    button{
+    button {
         color: #868e96;
         border: 1px solid #868e96;
         border-radius: 0;
         font-size: 20px;
         font-weight: 900;
     }
-    button:hover{
+    button:hover {
         color: white;
-        background-color:#868e96;
+        background-color: #868e96;
         border: 1px solid #868e96;
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     }
 }
