@@ -1,8 +1,13 @@
 @extends('layouts.backoffice')
 @section('content')
     <div class="container">
+        @if(Auth::check())
+        @php
+            $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
+        @endphp
+        @endif
         <div class="titulo">
-            <h1>Olá, Rute seja bem vinda!</h1>
+            <h1>Olá, {{ $user->nome }} seja bem vinda!</h1>
         </div>
     </div>
     <div class="icones">

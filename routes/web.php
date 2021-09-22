@@ -17,7 +17,9 @@ use App\Http\Controllers\Site\RegisterController;
 */
 // backoffice
 Route::middleware('auth')->group(function () {
+    Route::middleware('Check')->group(function () {
     Route::get('backoffice', [HomeController::class, 'index'])->name('backoffice');
+    });
 });
 
 Route::get('backoffice/banner', function () {

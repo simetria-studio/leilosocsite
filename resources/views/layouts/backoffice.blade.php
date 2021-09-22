@@ -52,9 +52,14 @@
                                 <a class="nav-link" href="#">Notícias</a>
                             </li>
                         </ul>
+                        @if(Auth::check())
+                        @php
+                            $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
+                        @endphp
+                        @endif
                         <div class="login">
                             <div class="ola">
-                                <span>Olá, Rute Monteiro</span>
+                                <span>Olá, {{ $user->nome }}</span>
                             </div>
                             <div class="vector">
                                 <span>
