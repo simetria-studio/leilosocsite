@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackOffice\HomeController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\RegisterController;
@@ -15,9 +16,10 @@ use App\Http\Controllers\Site\RegisterController;
 |
 */
 // backoffice
-Route::get('backoffice', function () {
-    return view('backoffice.home');
+Route::middleware('auth')->group(function () {
+    Route::get('backoffice', [HomeController::class, 'index'])->name('backoffice');
 });
+
 Route::get('backoffice/banner', function () {
     return view('backoffice.banner');
 });
