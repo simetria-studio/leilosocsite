@@ -259,7 +259,7 @@
 
     </div>
 
-    <div class="cookies-container mb-5">
+    <div class="cookies-container accept mb-5">
         <div class="cookies-content">
             <p>Utilizamos cookies próprios e de terceiros para fins analíticos e para lhe mostrar publicidade relacionada
                 com as suas preferências a partir dos <br>
