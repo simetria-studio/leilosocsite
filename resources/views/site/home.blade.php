@@ -6,7 +6,7 @@
                 <img src="{{ url('assets/img/backoffice/banner-teste.png') }}" alt="">
             </div>
             <div class="imagebg">
-                <img src="assets/img/site/teste1.jpg" alt="">
+                <img src="" alt="">
             </div>
             <div class="imagebg"></div>
         </div>
@@ -254,5 +254,29 @@
             </div>
 
         </div>
+
+
+
     </div>
+
+    <div class="cookies-container mb-5">
+        <div class="cookies-content">
+            <p>Utilizamos cookies próprios e de terceiros para fins analíticos e para lhe mostrar publicidade relacionada
+                com as suas preferências a partir dos <br>
+                seus hábitos de navegação e do seu perfil. Pode configurar ou recusar os cookies clicando em “Configuração
+                de cookies”. Também pode <br>
+                aceitar todos os cookies, premindo o botão “Aceitar todos os cookies”. Para mais informações, pode visitar a
+                nossa <a href="">Política de cookies</a> .
+            </p>
+            <div class="">
+                <div class="conf">
+                    <button>Configuração de cookies</button>
+                </div>
+                <div class="save">
+                    <button class="cookies-save">Aceitar todos os cookies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
