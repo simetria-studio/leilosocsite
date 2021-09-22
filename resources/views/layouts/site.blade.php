@@ -150,9 +150,11 @@
 
                             </ul>
                         </li>
+                        @if(Auth::check())
                         @php
                             $user = App\Models\InfoUser::where('user_id', auth()->user()->id)->first();
                         @endphp
+                        @endif
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
