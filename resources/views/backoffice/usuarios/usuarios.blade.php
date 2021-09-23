@@ -2,11 +2,11 @@
 @section('content')
     <div class="container">
         <div class="titulo">
-            <h1>Admins</h1>
+            <h1>Usuários</h1>
         </div>
         <div>
             <div>
-               <a href="{{ route('admin.create') }}"> <button class="btn btn-dark my-3">Cadastrar novo</button></a>
+               <a href="{{ route('user.create') }}"> <button class="btn btn-dark my-3">Cadastrar novo</button></a>
             </div>
             <table class="table">
                 <thead>

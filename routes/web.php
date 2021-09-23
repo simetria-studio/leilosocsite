@@ -31,7 +31,14 @@ Route::middleware('auth')->group(function () {
         Route::delete('backoffice/banner', [BannerController::class, 'destroyBanner'])->name('banner');
 
         Route::get('usuarios', [HomeController::class, 'usuarios'])->name('usuarios');
+
+        Route::get('users', [UsuariosController::class, 'usuarios'])->name('users');
         Route::get('admins', [UsuariosController::class, 'admins'])->name('admins');
+        Route::get('admin-create', [UsuariosController::class, 'adminCreate'])->name('admin.create');
+        Route::post('admin-store', [UsuariosController::class, 'adminStore'])->name('admin.store');
+
+        Route::get('user-create', [UsuariosController::class, 'userCreate'])->name('user.create');
+        Route::post('user-store', [UsuariosController::class, 'userStore'])->name('user.store');
     });
 });
 

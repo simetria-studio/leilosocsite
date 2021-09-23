@@ -12,7 +12,7 @@
                 </a>
             </div>
             <div class="col-md-4 col-4">
-                <a href="">
+                <a href="{{ route('users') }}">
                     <i class="far fa-user"></i>
                     <p>Usuários</p>
                 </a>
