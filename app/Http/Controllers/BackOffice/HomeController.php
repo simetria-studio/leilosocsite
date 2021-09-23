@@ -11,4 +11,9 @@ class HomeController extends Controller
     {
         return view('backoffice.home');
     }
+
+    public function usuarios()
+    {
+        return view('backoffice.usuarios.index');
+    }
 }

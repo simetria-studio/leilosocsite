@@ -46,6 +46,6 @@ class User extends Authenticatable
 
     public function info()
     {
-        return $this->belongsTo(InfoUser::class, 'user_id');
+        return $this->hasOne(InfoUser::class, 'user_id');
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BackOffice\HomeController;
+use App\Http\Controllers\BackOffice\UsuariosController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\RegisterController;
@@ -18,7 +19,9 @@ use App\Http\Controllers\Site\RegisterController;
 // backoffice
 Route::middleware('auth')->group(function () {
     Route::middleware('Check')->group(function () {
-    Route::get('backoffice', [HomeController::class, 'index'])->name('backoffice');
+        Route::get('backoffice', [HomeController::class, 'index'])->name('backoffice');
+        Route::get('usuarios', [HomeController::class, 'usuarios'])->name('usuarios');
+        Route::get('admins', [UsuariosController::class, 'admins'])->name('admins');
     });
 });
 
@@ -76,4 +79,3 @@ Route::get('leilao/descricao', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-

@@ -19,7 +19,7 @@
                 </div>
             </a>
         </div>
-        <div class="itens">
+        {{-- <div class="itens">
             <a href="">
                 <img src="{{ url('assets/img/backoffice/leilao.png') }}" alt="...">
                 <div class="card-body">
@@ -34,9 +34,9 @@
                     <p class="card-text">Ver todos calendários</p>
                 </div>
             </a>
-        </div>
+        </div> --}}
         <div class="itens">
-            <a href="">
+            <a href="{{ route('usuarios') }}">
                 <img src="{{ url('assets/img/backoffice/user.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Cadastrar Usuários</p>
