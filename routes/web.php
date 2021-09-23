@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController as SiteController;
 use App\Http\Controllers\BackOffice\HomeController;
+use App\Http\Controllers\BackOffice\BannerController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\RegisterController;
@@ -18,20 +20,16 @@ use App\Http\Controllers\Site\RegisterController;
 // backoffice
 Route::middleware('auth')->group(function () {
     Route::middleware('Check')->group(function () {
-    Route::get('backoffice', [HomeController::class, 'index'])->name('backoffice');
+        Route::get('backoffice', [HomeController::class, 'index'])->name('backoffice');
+
+        Route::get('backoffice/banner', [BannerController::class, 'viewBanner'])->name('banner');
+        Route::post('backoffice/banner', [BannerController::class, 'storeBanner'])->name('banner');
+        Route::delete('backoffice/banner', [BannerController::class, 'destroyBanner'])->name('banner');
     });
 });
-
-Route::get('backoffice/banner', function () {
-    return view('backoffice.banner');
-});
-
 // site
 
-
-Route::get('/', function () {
-    return view('site.home');
-})->name('site.home');
+Route::get('/', [SiteController::class, 'index'])->name('site.home');
 
 Route::get('login-site', [RegisterController::class, 'index'])->name('site.login');
 Route::get('registo-step', [RegisterController::class, 'create'])->name('site.registo.step');
