@@ -158,7 +158,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{ url('assets/img/site/user.png') }}" alt="">@if (Auth::check()){{ $user->nome }}
+                                <img src="{{ url('assets/img/site/user.png') }}" alt="">@if (Auth::check()){{ $user->nome ?? '' }}
                             @else
                             LOGIN
                                 @endif
@@ -167,7 +167,7 @@
                                 <li>
                                     @if (Auth::check())
 
-                                        <h6>{{ $user->nome }}</h6>
+                                        <h6>{{ $user->nome ?? '' }}</h6>
                                     @else
                                         <h6>Faça Login</h6>
                                     @endif
@@ -241,7 +241,7 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li>
                     @if (Auth::check())
-                        <h6>OLÁ {{ $user->nome }}</h6>
+                        <h6>OLÁ {{ $user->nome ?? '' }}</h6>
                     @else
                         <h6>OLÁ </h6>
                     @endif
