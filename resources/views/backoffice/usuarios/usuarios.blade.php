@@ -21,7 +21,7 @@
                     @foreach ($users as $user)
                     <tr>
                         <th scope="row">{{ $user->id }}</th>
-                        <td>{{ $user->info->nome }}</td>
+                        <td>{{ $user->info->nome ?? '' }}</td>
                         <td>{{ $user->email }}</td>
                         <td>
                             <div class="d-flex justify-content-around">
