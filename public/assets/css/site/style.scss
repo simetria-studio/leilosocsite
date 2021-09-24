@@ -236,14 +236,13 @@ footer {
             }
         }
     }
-
 }
 .cookies-container.accept {
-    transition: .6s height;
+    transition: 0.6s height;
     height: 0;
 }
 .cookies-container {
-    transition: .6s height;
+    transition: 0.6s height;
     background-color: #246683;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
     color: #ccc;
@@ -255,7 +254,7 @@ footer {
     P {
         margin: 0;
         font-size: 12px;
-        a{
+        a {
             color: #ccc;
         }
     }
@@ -264,31 +263,31 @@ footer {
         padding: 1rem;
         margin: 0 auto;
         display: flex;
-        .conf{
+        .conf {
             margin-left: 80px;
-            button{
+            button {
                 background-color: transparent;
                 border: none;
                 color: #ccc;
             }
-            button:hover{
+            button:hover {
                 text-decoration: underline;
             }
         }
-        .save{
+        .save {
             margin-top: 0;
             margin-left: 80px;
-            button{
+            button {
                 background-color: transparent;
                 border: none;
                 color: #ccc;
             }
-            button:hover{
+            button:hover {
                 text-decoration: underline;
             }
         }
     }
-    .save{
+    .save {
         display: flex;
         justify-content: center;
     }
@@ -1875,10 +1874,6 @@ ol {
         width: 250px;
         height: 40px;
         outline: none;
-<<<<<<< HEAD
-
-=======
->>>>>>> main
     }
 }
 .dados-pessoais {
@@ -1931,9 +1926,209 @@ ol {
         color: white;
         background-color: #868e96;
         border: 1px solid #868e96;
-<<<<<<< HEAD
+    }
+}
 
-=======
->>>>>>> main
+
+
+// MY LEILOSOC
+.usuario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        h6 {
+            font-size: 26px;
+            font-weight: 900;
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+    .perfil {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        .img-perfil {
+            width: 45px;
+            height: 45px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        .name-user {
+            margin-left: 10px;
+            h6 {
+                font-size: 26px;
+                font-weight: 300;
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .reveja {
+        background-color: #246683;
+        color: #ccc;
+        border-radius: 5px;
+        height: 70px;
+        width: 200px;
+        text-align: center;
+        h6 {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+.content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        "b a a"
+        "b c c";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 10% 1fr 18%;
+    grid-gap: 5px;
+    .topo {
+        grid-area: a;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .square {
+            line-height: 10px;
+            width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                width: 60px;
+                height: 50px;
+                background-color: $primary-color;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                ion-icon {
+                    color: white;
+                    font-size: 32px;
+                }
+            }
+            span {
+                color: gray;
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+            .faq {
+                .faq-item {
+                    margin-top: 5px;
+                    p {
+                        margin: 0;
+                        font-size: 10px;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .lateral {
+        background-color: $primary-color;
+        grid-area: b;
+        button {
+            border: none;
+            background-color: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100px;
+            ion-icon {
+                color: white;
+                font-size: 32px;
+            }
+        }
+        button:hover {
+            background-color: white;
+            ion-icon {
+                color: $primary-color;
+            }
+        }
+        .active {
+            background-color: white;
+            ion-icon {
+                color: $primary-color;
+            }
+        }
+    }
+    .meio {
+        grid-area: c;
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        .formulario_1 {
+            margin-top: 50px;
+            grid-column: 2;
+            input,
+            select {
+                border: $secondary-color 1px solid;
+                width: 100%;
+            }
+            label {
+                margin-right: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.outros {
+    margin-left: 180px;
+    margin-bottom: 50px;
+    width: 1040px;
+    .destaques-titulo {
+        h3 {
+            font-weight: 400;
+            color: $secondary-color;
+        }
+    }
+    .destaques {
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 23% 23% 23% 23%;
+        .destaque-item {
+            .anuncio-img {
+                height: 180px;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .anuncio-text {
+                margin-left: 5px;
+                .titulo {
+                    h5 {
+                        margin-top: 10px;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                .btn-span {
+                    span {
+                        background-color: $primary-color;
+                        border-radius: 5px;
+                        font-size: 10px;
+                        color: #ccc;
+                    }
+                }
+                .texto {
+                    margin-top: 20px;
+                    p {
+                        font-size: 12px;
+                        color: gray;
+                    }
+                }
+            }
+        }
     }
 }
