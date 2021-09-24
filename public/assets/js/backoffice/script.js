@@ -160,3 +160,29 @@ $(document).ready(function() {
         $('#modalImagem').find('.imgModal').attr('src', image);
     });
 });
+
+//apagar usuários
+
+$(document).on('click', '.btn-excluir-user', function(){
+    var id      = $(this).data('id');
+    var route   = $(this).data('route');
+
+    Swal.fire({
+        icon: 'warning',
+        title: 'Apagar o Usuário?',
+        showCancelButton: true,
+        confirmButtonText: 'Sim',
+        CancelButtonText: 'Cancelar',
+    }).then((result) => {
+        if(result.isConfirmed) {
+            $.ajax({
+                url: route,
+                type: 'POST',
+                data: {id},
+                success: function(data) {
+                    location.reload();
+                }
+            });
+        }
+    });
+});

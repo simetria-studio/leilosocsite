@@ -81,7 +81,46 @@ class UsuariosController extends Controller
             'nif' => $request->nif,
             'sms' => 'nao',
         ]);
-        return redirect()->route('usuarios');
+        return redirect()->route('usuarios')->with('success', 'Pronto');
+    }
+
+    public function userShow($id)
+    {
+        $user = User::with('info')->find($id);
+
+        return view('backoffice.usuarios.edit-admin', compact('user'));
+    }
+
+    public function userUpdate(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->email = $request->email;
+        $user->password = Hash::make($request->get('password'));
+        $user->save();
+
+        $user->info()->update([
+            'user_id' => $user->id,
+            'nome' => $request->nome,
+            'apelido' => $request->apelido,
+            'pais' => $request->pais,
+            'codigo_pais' => $request->codigo_pais,
+            'telemovel' => $request->telemovel,
+            'morada' => $request->morada,
+            'codigo_postal' => $request->codigo_postal,
+            'localidade' => $request->localidade,
+            'data_nascimento' => date("Y-m-d", strtotime($request->data_nascimento)),
+            'nif' => $request->nif,
+            'sms' => 'nao',
+        ]);
+
+        return redirect()->route('usuarios')->with('success', 'Pronto');
+    }
+
+    public function destroy(Request $request)
+    {
+        $user = User::with('info')->find($request->id);
+        $user->delete();
+        return response()->json();
     }
 
 }

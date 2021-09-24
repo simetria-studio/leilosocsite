@@ -26,10 +26,10 @@
                         <td>
                             <div class="d-flex justify-content-around">
                                 <div>
-                                    <button class="btn btn-danger">Excluir</button>
+                                    <button class="btn btn-danger btn-excluir-user" data-id="{{$user->id}}" data-route="{{route('user.delete')}}">Excluir</button>
                                 </div>
                                 <div>
-                                    <button class="btn btn-dark">Editar</button>
+                                  <a href="{{ route('admin.show', $user->id) }}"> <button class="btn btn-dark">Editar</button></a>
                                 </div>
                             </div>
                         </td>
