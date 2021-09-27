@@ -26,7 +26,7 @@
 
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb  mt-3">
-                <li class="breadcrumb-item"><a href="#">Leilosoc</a></li>
+                <li class="breadcrumb-item"><a href="/">Leilosoc</a></li>
                 <li class="breadcrumb-item active" aria-current="page">FAQ</li>
             </ol>
         </nav>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="square">
-                    <a href="" class="btn">
+                    <a href="/myleilosoc/interesses" class="btn">
                         <ion-icon name="today"></ion-icon>
                     </a>
                     <div class="faq">
@@ -112,18 +112,18 @@
             </div>
 
             <div class="lateral">
-                <button>
+                <a href="/myleilosoc/perfil-settings" class="btn">
+                        <ion-icon name="person"></ion-icon>
+                </a>
+                <a href="/myleilosoc/dados-pessoais" class="">
                     <ion-icon name="person"></ion-icon>
-                </button>
-                <button class="active">
+                </a>
+                <a>
                     <ion-icon name="person"></ion-icon>
-                </button>
-                <button>
+                </a>
+                <a>
                     <ion-icon name="person"></ion-icon>
-                </button>
-                <button>
-                    <ion-icon name="person"></ion-icon>
-                </button>
+                </a>
             </div>
 
 
