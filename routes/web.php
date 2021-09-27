@@ -95,10 +95,6 @@ Route::get('leilao/descricao', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
 // MY LEILOSOC
 
@@ -111,10 +107,7 @@ Route::get('myleilosoc/dados-pessoais', function () {
 Route::get('myleilosoc/interesses', function () {
     return view('site.myleilosoc.interesse');
 });
-<<<<<<< Updated upstream
 
-=======
 Route::get('myleilosoc/perfil-settings', function () {
     return view('site.myleilosoc.perfil-settings');
 });
->>>>>>> Stashed changes
