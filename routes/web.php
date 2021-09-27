@@ -111,3 +111,8 @@ Route::get('myleilosoc/interesses', function () {
 Route::get('myleilosoc/perfil-settings', function () {
     return view('site.myleilosoc.perfil-settings');
 });
+
+// calendario 
+Route::get('calendario', function () {
+    return view('site.calendario.calendario');
+});

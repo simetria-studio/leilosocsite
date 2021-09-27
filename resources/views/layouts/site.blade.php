@@ -306,6 +306,10 @@
     <div>
         @yield('content')
     </div>
+
+    <div>
+        @yield('footer')
+    </div>
     <div class="vcl">
         <div class="bloco-1">
             <p class="titulo">VENDA COM A LEILOSOC®</p>
