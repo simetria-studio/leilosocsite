@@ -45,7 +45,15 @@ Route::middleware('auth')->group(function () {
     });
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('myleilosoc', function () {
+        return view('site.myleilosoc.dados-pessoais');
+    })->name('myleilosoc');
+    Route::get('myleilosoc/meus-interesses', function () {
+        return view('site.myleilosoc.interesse');
+    });
 
+});
 
 
 // site
@@ -99,10 +107,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // MY LEILOSOC
 
-Route::get('myleilosoc', function () {
-    return view('site.myleilosoc.dados-pessoais');
-});
-Route::get('myleilosoc/meus-interesses', function () {
-    return view('site.myleilosoc.interesse');
-});
+
 

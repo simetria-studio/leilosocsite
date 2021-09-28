@@ -178,7 +178,7 @@
                                 </li>
 
                                 <li class="dropdown-submenu"><a class="dropdown-item"
-                                        href="{{ route('site.login') }}">A MINHA CONTA</a></li>
+                                        href="{{ route('myleilosoc') }}">A MINHA CONTA</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider">
@@ -248,7 +248,7 @@
                 </li>
                 @if (Auth::check())
                     <li>
-                        <a href="{{ route('site.login') }}">MINHA CONTA</a>
+                        <a href="{{ route('myleilosoc') }}">MINHA CONTA</a>
                     </li>
                 @else
                     <li>
