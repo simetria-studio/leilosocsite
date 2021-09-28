@@ -106,25 +106,24 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // MY LEILOSOC
 
-<<<<<<< HEAD
 
-=======
-Route::get('myleilosoc', function () {
-    return view('site.myleilosoc.dados-pessoais');
-});
+
+// Route::get('myleilosoc', function () {
+//     return view('site.myleilosoc.dados-pessoais');
+// });
 Route::get('myleilosoc/dados-pessoais', function () {
     return view('site.myleilosoc.dados-pessoais');
 });
-Route::get('myleilosoc/interesses', function () {
-    return view('site.myleilosoc.interesse');
-});
->>>>>>> main
+// Route::get('myleilosoc/interesses', function () {
+//     return view('site.myleilosoc.interesse');
+// });
+
 
 Route::get('myleilosoc/perfil-settings', function () {
     return view('site.myleilosoc.perfil-settings');
 });
 
-// calendario 
+// calendario
 Route::get('calendario', function () {
     return view('site.calendario.calendario');
 });
