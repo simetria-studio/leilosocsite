@@ -21,6 +21,13 @@ use App\Http\Controllers\Site\RegisterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Para coneção ao banco de dados exterior, podendo faer a mesma coisa
+// // $teste = \DB::connection('mysql2')->select('SELECT * FROM modelos');
+// $teste = new Modelo;
+// $teste = $teste->setConnection('mysql2')->get();
+// dd($teste);
+
 // backoffice
 Route::middleware('auth')->group(function () {
     Route::middleware('Check')->group(function () {
