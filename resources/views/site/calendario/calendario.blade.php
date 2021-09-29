@@ -18,7 +18,24 @@
         <div class="calendario-leiloes">
             <h6><span style="font-weight:600">CALENDÁRIO</span> DE LEILÕES</h6>
         </div>
+        <div class="acessos">
+            <div class="ano">
+                <span class="input-number-decrement"><</span>
+                <input class="input-number" type="text" value="2021" min="0" max="10">
+                <span class="input-number-increment">></span>
+            </div>
+            <div>
+                <p>Agosto</p>
+            </div>
+            <div class="mes">
+                <span class="input-number-decrement"><</span>
+                <input class="input-number" type="text" value="SETEMBRO">
+                <span class="input-number-increment">></span>
+            </div>
+        </div>
+        
         <div class="calendar mb-5">
+
             <ul class="weekdays">
                 <li>SUN</li>
                 <li>MON</li>
@@ -195,48 +212,425 @@
                         </div>
                     </div>
                     <div class="descricao">
-                        <div>
-                            <p>1 LOTE • 2 LICITAÇÕES</p>
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>Termina em 0d 6h 53m 46s</p>
-                        </div>
-                        <div>
-                            <h5>MASERATI LEVANTE V6</h5>
-                        </div>
-                        <div>
-                            <p>PT • BMPE-588</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class="imagem">
-                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
-                    </div>
-                    <div class="descricao">
-
                     </div>
                 </div>
                 <div class="item">
                     <div class="imagem">
                         <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
                     </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
                     <div class="descricao">
-
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="imagem">
                         <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
                     </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
                     <div class="descricao">
-
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imagem">
+                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
+                    </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="descricao">
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imagem">
+                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
+                    </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="descricao">
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imagem">
+                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
+                    </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="descricao">
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imagem">
+                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
+                    </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="descricao">
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imagem">
+                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
+                    </div>
+                    <div class="icones">
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-save"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <span class="btn">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="descricao">
+                        <div class="margin">
+                            <div class="lote-licitacoes">
+                                <p>1 LOTE • 2 LICITAÇÕES</p>
+                            </div>
+                            <div class="tempo">
+                                <p>Termina em 0d 6h 53m 46s</p>
+                            </div>
+                            <div class="product-name">
+                                <p>MASERATI LEVANTE V6</p>
+                            </div>
+                            <div class="serie">
+                                <p>PT • BMPE-588</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <div class="paginacao">
+                <nav aria-label="...">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <div class="d-flex justify-content-around">
+            <div>
+                <button class="btn btn-primary">LOG IN</button>
+                <button class="btn btn-outline-primary">REGISTO</button>
+            </div>
+            <div>
+                <p>Licite em + 5000 objectos todas as semanas, seleccionados por uma equipa experiente e profissional</p>
+            </div>
+        </div>
+
+        <div class="destaque-semanal">
+            <div class="titulo mt-5 mb-5 text-center">
+                <h4><span style="font-weight: 900">Destaques </span> desta semana</h4>
+            </div>
+            <div class="destaques-produtos">
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="{{ url('assets/img/site/Ativo 1.png') }}" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="container">
+                            <div class="nome">
+                                <div>
+                                    <p>AUDI RS6</p>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <p>Base</p>
+                                </div>
+                                <div>
+                                    <p>79 000€</p>
+                                </div>
+                                <div>
+                                    <p>Inicio</p>
+                                </div>
+                                <div>
+                                    <p>01.06.21 às 9h00</p>
+                                </div>
+                                <div>
+                                    <p>Fim </p>
+                                </div>
+                                <div>
+                                    <p>15.06.21 às 18h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem-produto">
+                        <img src="{{ url('assets/img/site/Ativo 2.png') }}" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="container">
+                            <div class="nome">
+                                <div>
+                                    <p>AUDI RS6</p>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <p>Base</p>
+                                </div>
+                                <div>
+                                    <p>79 000€</p>
+                                </div>
+                                <div>
+                                    <p>Inicio</p>
+                                </div>
+                                <div>
+                                    <p>01.06.21 às 9h00</p>
+                                </div>
+                                <div>
+                                    <p>Fim </p>
+                                </div>
+                                <div>
+                                    <p>15.06.21 às 18h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 @endsection

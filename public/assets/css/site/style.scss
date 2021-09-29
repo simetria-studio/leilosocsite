@@ -299,8 +299,9 @@ footer {
 .slider {
     .imagebg {
         width: 100%;
-        height: 400px;
-        max-height: 558px;
+        max-width: 1310px;
+        height: 360px;
+        max-height: 360px;
 
         img {
             object-fit: cover;
@@ -2170,6 +2171,106 @@ ol {
             font-weight: 400;
         }
     }
+    .acessos {
+        width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            margin-top: 15px;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-weight: 600;
+        }
+        .ano {
+      
+            .input-number {
+                width: 80px;
+                padding: 0 12px;
+                vertical-align: top;
+                text-align: center;
+                outline: none;
+                color: #666;
+                font-weight: 700;
+            }
+            .input-number,
+            .input-number-decrement,
+            .input-number-increment {
+                border: 1px solid #ccc;
+                height: 40px;
+                user-select: none;
+            }
+
+            .input-number-decrement,
+            .input-number-increment {
+                display: inline-block;
+                width: 10px;
+                line-height: 38px;
+                background: #f1f1f1;
+                color: #444;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            &:active {
+                background: #ddd;
+            }
+
+            .input-number-decrement {
+                border-right: none;
+                border-radius: 4px 0 0 4px;
+            }
+
+            .input-number-increment {
+                border-left: none;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+        .mes {
+            .input-number {
+                width: 110px;
+                padding: 0 12px;
+                vertical-align: top;
+                text-align: center;
+                outline: none;
+                color: gray;
+                font-size: 10px;
+            }
+            .input-number,
+            .input-number-decrement,
+            .input-number-increment {
+                border: 1px solid #ccc;
+                height: 40px;
+                user-select: none;
+            }
+
+            .input-number-decrement,
+            .input-number-increment {
+                display: inline-block;
+                width: 10px;
+                line-height: 38px;
+                background: #f1f1f1;
+                color: #666;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            &:active {
+                background: #ddd;
+            }
+
+            .input-number-decrement {
+                border-right: none;
+                border-radius: 4px 0 0 4px;
+            }
+
+            .input-number-increment {
+                border-left: none;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+
     .calendar {
         text-align: center;
         /* Weekdays (Mon-Sun) */
@@ -2262,7 +2363,7 @@ ol {
                     justify-content: end;
                     z-index: 10;
                     .icon {
-                        padding: 5px;
+                        padding-left: 5px;
                     }
                     span {
                         background-color: transparentize(
@@ -2283,8 +2384,89 @@ ol {
                         }
                     }
                 }
-
                 .descricao {
+                    border-left: #666 1px solid;
+                    border-right: #666 1px solid;
+                    .margin {
+                        margin: 0 20px;
+                        .lote-licitacoes {
+                            p {
+                                font-size: 14px;
+                                color: $primary-color;
+                                margin: 0;
+                            }
+                        }
+                        .tempo {
+                            p {
+                                font-size: 12px;
+                                font-weight: 600;
+                                margin: 2px;
+                            }
+                        }
+                        .product-name {
+                            p {
+                                margin: 2px;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                        .serie {
+                            p {
+                                color: #666;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .paginacao {
+            width: 100%;
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .destaque-semanal {
+        .destaques-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+            grid-gap: 1rem;
+            .produto {
+                .imagem-produto {
+                    height: 350px;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .card-info {
+                    position: relative;
+                    bottom: 120px;
+                    left: 20px;
+                    width: 45%;
+                    background-color: #fff;
+                    .nome {
+                        margin-top: 10px;
+                        border-bottom: 1px solid #666;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                    .info {
+                        margin-bottom: 10px;
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
