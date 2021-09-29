@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('content')
-    <div class="slider">
+    <div class="slider text-center">
         @foreach ($banners as $banner)
             <div class="imagebg">
                 <img src="{{ asset('storage/' . $banner->path) }}" alt="">
