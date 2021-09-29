@@ -1,14 +1,14 @@
 @extends('layouts.site')
 @section('content')
-    <div class="slider">
-        @foreach ($banners as $banner)
-            <div class="imagebg">
-                <img src="{{ asset('storage/' . $banner->path) }}" alt="">
-            </div>
-        @endforeach
-    </div>
-    <div class="container">
 
+    <div class="container">
+        <div class="slider">
+            @foreach ($banners as $banner)
+                <div class="imagebg">
+                    <img src="{{ asset('storage/' . $banner->path) }}" alt="">
+                </div>
+            @endforeach
+        </div>
         <div class="licite">
             <p><span class="em">Licite em <span class="obj">+ 5000 objectos</span> todas as
                     semanas,</span>
